@@ -21,10 +21,10 @@ function Bars({ bars, compare, sorted, swap }) {
                 const height = bar * 500 / bars.length;
                 let bg = 'turquoise';
 
-                if (compare && i === compare[0] || i === compare[1]) {
+                if (compare && (i === compare[0] || i === compare[1])) {
                     bg = 'red';
                 }
-                if (swap && i === swap[0] || i === swap[1]) {
+                if (swap && (i === swap[0] || i === swap[1])) {
                     bg = 'yellow';
                 }
                 if (sorted && sorted.includes(i)) {
