@@ -1,5 +1,5 @@
 import React from "react";
-import "./vis.css";
+import "./Visualizer.css";
 
 const vis = ({algo}) => {
     return (

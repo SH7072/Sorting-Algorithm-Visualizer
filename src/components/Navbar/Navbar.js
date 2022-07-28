@@ -24,11 +24,7 @@ const Navbar = ({ handleLength, handleSpeed, handleAlgo, generateRandomArray, ha
                     <button className='btn' value={algo='quickSort'} onClick={handleAlgo} disabled={sorting}>Quick Sort</button>
                     <button className='btn' value={algo='bubbleSort'} onClick={handleAlgo} disabled={sorting}>Bubble Sort</button>
 
-                    <select onChange={handleAlgo} disabled={sorting} value={algo}>
-                        <option value='bubbleSort'>Bubble Sort</option>
-                        <option value='mergeSort'>Merge Sort</option>
-                        <option value='quickSort'>Quick Sort</option>
-                    </select>
+                    
                 </div>
                 
                 <div>

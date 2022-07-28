@@ -3,7 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar.js';
 import Bars from './components/Bars/Bars.js';
-import vis from './components/Visualizer/vis.js';
+import Visualizer from './components/Visualizer/Visualizer';
 
 import bubbleSort from './Algorithm/bubbleSort.js';
 import mergeSort from './Algorithm/mergeSort.js';
@@ -29,7 +29,7 @@ function App() {
   }
 
   // States
-  const [algo, setAlgo] = useState('bubbleSort')
+  const [algo, setAlgo] = useState('quickSort')
   const [len, setLength] = useState(30)
   const [bars, setBars] = useState([])
   const [sorting, setSorting] = useState(false)
@@ -126,7 +126,7 @@ function App() {
         sorted={sortedIndex}
       />
 
-      <vis algo={algo} />
+      <Visualizer algo={algo} />
     </div>
   );
 }
