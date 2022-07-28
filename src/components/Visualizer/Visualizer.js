@@ -4,7 +4,7 @@ import "./Visualizer.css";
 const vis = ({algo}) => {
     return (
         <div className='visualizer'>
-            <div className='key'> 
+            {/* <div className='key'> 
                 <span className='sq compare'></span> Compare
             </div>
             <div className='key'> 
@@ -12,7 +12,7 @@ const vis = ({algo}) => {
             </div>
             <div className='key'> 
                 <span className='sq sorted'></span> Sorted
-            </div>
+            </div> */}
         </div>
     )
 }

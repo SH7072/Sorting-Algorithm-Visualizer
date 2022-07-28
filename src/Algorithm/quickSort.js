@@ -46,7 +46,7 @@ const quickSortHelper = (dupbars, low, high) => {
 }
 
 const quickSort = (blocks) => {
-    const dupbars = blocks.slice() // Copying blocks array
+    const dupbars = blocks.slice() 
     sortedarr = []
     
     quickSortHelper(dupbars, 0, dupbars.length - 1)

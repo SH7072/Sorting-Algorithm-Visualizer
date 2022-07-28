@@ -6,7 +6,7 @@ const merge = (dupbars, low, mid, high) => {
     const arr = [] 
 
     while((i <= mid) && (j <= high)){
-        sortedarr.push([i, j, null, null])      // Compare i th and j th element  
+        sortedarr.push([i, j, null, null])      
         if(dupbars[i] <= dupbars[j]){
             arr.push(dupbars[i++])
         } else {

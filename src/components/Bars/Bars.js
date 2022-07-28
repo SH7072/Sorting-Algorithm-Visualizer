@@ -22,10 +22,10 @@ function Bars({ bars, compare, sorted, swap }) {
                 let bg = 'turquoise';
 
                 if (compare && (i === compare[0] || i === compare[1])) {
-                    bg = 'red';
+                    bg = '#DE0108';
                 }
                 if (swap && (i === swap[0] || i === swap[1])) {
-                    bg = 'yellow';
+                    bg = '#ffd53c';
                 }
                 if (sorted && sorted.includes(i)) {
                     bg = 'green';

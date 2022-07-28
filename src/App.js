@@ -39,27 +39,22 @@ function App() {
   const [swap, setSwap] = useState([])
   const [sortedIndex, setSortedIndex] = useState([])
 
-  // Generating random array every time the length is changed by th user
   useEffect(() => {
     generateRandomArray(len)
   }, [len, algo])
 
-  // setting the selected algorithm
   const handleAlgo = (event) => {
     setAlgo(event.target.value)
   }
 
-  // handling the length of the array
   const handleLength = (event) => {
     setLength(Number(event.target.value))
   }
 
-  // handling the speed of sorting
   const handleSpeed = (event) => {
     setSpeed(Math.ceil(400 / Number(event.target.value)))
   }
 
-  // Sorting according to the algorithm
   const handleSort = () => {
 
     const sortAccOrder = (sortedarr) => {
