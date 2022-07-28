@@ -22,6 +22,7 @@ const partition = (duplicatearr, low, high) => {
     sortedarr.push([null, null, null, j]);
     return j;
 }
+
 const quickSortHelper = (dupbars, low, high) => {
     if(low >= high) {
         if(low === high) sortedarr.push([null, null, null, low])
