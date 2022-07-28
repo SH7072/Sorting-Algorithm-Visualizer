@@ -42,4 +42,4 @@ function Bars({ bars, compare, sorted, swap }) {
         </div>
     );
 }
-export default Bars;
+export default Bars; 

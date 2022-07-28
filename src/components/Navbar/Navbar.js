@@ -20,20 +20,18 @@ const Navbar = ({ handleLength, handleSpeed, handleAlgo, generateRandomArray, ha
                         <input type='range' onChange={handleLength} min='5' max={100} step='1' disabled={sorting} value={len}></input>
                     </div>
                     
-                    <button className='btn' value='mergeSort' onClick={handleAlgo} disabled={sorting}>Merge Sort</button>
-                    <button className='btn' value='quickSort' onClick={handleAlgo} disabled={sorting}>Quick Sort</button>
+                    <button className='btn' value={algo='mergeSort'} onClick={handleAlgo} disabled={sorting}>Merge Sort</button>
+                    <button className='btn' value={algo='quickSort'} onClick={handleAlgo} disabled={sorting}>Quick Sort</button>
+                    <button className='btn' value={algo='bubbleSort'} onClick={handleAlgo} disabled={sorting}>Bubble Sort</button>
 
-                    {/* <select onChange={handleAlgo} disabled={sorting} value={algo}>
+                    <select onChange={handleAlgo} disabled={sorting} value={algo}>
                         <option value='bubbleSort'>Bubble Sort</option>
-                        <option value='insertionSort'>Insertion Sort</option>
-                        <option value='selectionSort'>Selection Sort</option>
                         <option value='mergeSort'>Merge Sort</option>
                         <option value='quickSort'>Quick Sort</option>
-                    </select> */}
+                    </select>
                 </div>
                 
                 <div>
-                    <button className='btn' value='bubbleSort' onClick={handleAlgo} disabled={sorting}>Bubble Sort</button>
                     <button onClick={handleSort} disabled={sorting || completed}>Sort</button>
                 </div>
             </div>
