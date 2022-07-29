@@ -6,10 +6,10 @@ const swap = (arr, i, j) => {
 const bubbleSort = (bars) => {
     const duplicatearr = bars.slice();
     const sortedarr = [];
+    let i,j;
+    for ( i = 0; i < duplicatearr.length; i++) {
 
-    for (let i = 0; i < duplicatearr.length; i++) {
-
-        for (let j = 0; j < duplicatearr.length-i-1; j++) {
+        for ( j = 0; j < duplicatearr.length-i-1; j++) {
             sortedarr.push([j, j + 1, null, null]);
 
             if (duplicatearr[j] > duplicatearr[j + 1]) {
@@ -17,7 +17,7 @@ const bubbleSort = (bars) => {
                 sortedarr.push([j, j + 1, duplicatearr.slice(), null]);
             }
         }
-        sortedarr.push([null, null, null, i]);
+        sortedarr.push([null, null, null, j]);
 
     }
     return sortedarr;

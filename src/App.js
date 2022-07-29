@@ -29,7 +29,7 @@ function App() {
   }
 
   // States
-  const [algo, setAlgo] = useState('quickSort')
+  const [algo, setAlgo] = useState('bubbleSort')
   const [len, setLength] = useState(30)
   const [bars, setBars] = useState([])
   const [sorting, setSorting] = useState(false)
